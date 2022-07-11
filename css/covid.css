@@ -1,16 +1,47 @@
 
 /* for Bonnie start */
 
-.landing-panel p.maroon{
+.languageToggle{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right:20px;
+  top:15px;
   color: #611C35;
-  font-size: 1.75em;
-  margin: .5em 0 0 0;
-  font-weight: 500;
+  z-index: 999;
+  font-size:2em
+}
+
+.languageToggle .english .btn,
+.languageToggle .spanish .btn{
+  font-size:1em
 }
 
 
-.landing-panel p.maroon:hover{
+.landing-panel .button-default:hover{
+  text-decoration: none !important;
+}
+
+.landing-panel .maroon{
+  color: #611C35;
+
+  font-weight: 500;
+}
+
+span.bigger{
+  color: #004568;
+  font-size:24px;
+  margin:0 .5em
+}
+
+
+.landing-panel .maroon:hover{
   cursor: grab
+}
+
+.landing-panel{
+  max-width:92% !important;
+
 }
 
 
@@ -19,6 +50,20 @@
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+.sideVideo iframe {
+  min-height: 169px;
+
+  min-width: 292px;
+}
+
+@media (max-width:1370px){
+  .sideVideo iframe {
+    min-height: 164px;
+
+    min-width: 292px;
+  }
 }
 
 @keyframes shake {
@@ -39,6 +84,40 @@
   }
 }
 
+@media (max-width:1300px){
+  .landing-panel {
+    max-width: 100% !important;
+    padding: 1em 2em !important;
+    width: 100% !important;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 991px) {
+  .landing-panel .col-sm-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .landing-panel .welcome p {
+    margin: 0;
+  }
+
+  .menu-buttons {
+    margin: -100px auto 0px !important;
+  }
+
+
+  .landing-panel{
+    margin: 0rem auto 0rem !important;
+  }
+}
 
 
 #videoModal .modal-content {
