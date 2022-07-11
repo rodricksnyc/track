@@ -120,6 +120,18 @@ span.bigger{
   }
 }
 
+@media (max-width:767px) {
+  .landing-panel {
+      margin: 0rem auto 0rem !important;
+      margin-top: 6em !important;
+  }
+  .hero-img-container {
+    height: auto !important;
+
+}
+
+}
+
 
 #videoModal .modal-content {
   position: relative;
