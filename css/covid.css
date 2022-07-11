@@ -116,6 +116,7 @@ span.bigger{
 
   .landing-panel{
     margin: 0rem auto 0rem !important;
+    margin-top: -4em !important;
   }
 }
 
