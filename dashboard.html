@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>Track COVID at Home</title>
+  <link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+  <link rel="stylesheet" href="vendorlibs/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid overflow-hidden position-relative main">
+    <!-- <header class="landing">
+    <a href="" target="_blank">
+
+    <img src="img/logo.svg" class="img-responsive logo" alt="Track COVID at Home logo">
+  </a>
+</header> -->
+
+<header id="Home">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="pb-0" href="">
+        <div class="d-flex justify-content-start">
+          <img src="img/logo.svg" class="img-responsive logo" alt="Track COVID at Home logo">
+        </div>
+      </a>
+      <button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link active">
+
+              Dashboard
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="about.html" class="lang-select nav-link">
+              About
+
+            </a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a href="faq.html" class="lang-select nav-link">
+              FAQs
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="my-account.html" class="lang-select nav-link">
+              My account
+            </a>
+          </li>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- start contact form -->
+<div id="slideOut" class="content-top">
+
+  <div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+    <i aria-hidden="true" class="far fa-envelope"></i><span class="tabText"> Contact</span>
+
+  </div>
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="closeThisPlease" id="close">
+        <button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+          ✕
+        </button>
+      </div>
+
+
+      <h3 class="text-center">Contact us with any questions or comments about the <span class="strong">Track COVID at Home</span> study!</h3>
+
+
+    </div>
+    <div class="modal-body">
+
+
+      <form method="post" id="theform">
+
+        <div class="form-group">
+          <label for="formControl1">Name</label>
+          <input id="formControl1" type="text" class="form-control secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name">
+        </div>
+        <div class="form-group">
+          <label for="formControl2">Email*</label>
+          <input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <label for="general-inquiry">Reason for Contact*</label>
+            <div class="around">
+
+              <div class="form-check">
+                <i class="far fa-comments"></i>
+                <input type="radio" name="optradio" value="1" class="form-check-input required" tabindex="-1" id="val1" checked>
+                <label for="val1" class="form-check-label">General Inquiry</label>
+              </div>
+              <div class="form-check">
+                <i class="far fa-wrench"></i>
+                <input type="radio" name="optradio" value="2" class="form-check-input" tabindex="-1" id="val2">
+                <label for="val2" class="form-check-label">Technical Issue</label>
+              </div>
+
+              <div class="form-check">
+                <i class="far fa-question-circle"></i>
+                <input type="radio" name="optradio" value="3" class="form-check-input" tabindex="-1" id="val3">
+                <label for="val3" class="form-check-label">Other</label>
+              </div>
+
+
+            </div>
+
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="formControl4">Message</label>
+          <textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-center mt-3 mb-3">
+          <button type="submit" class="btn" id="sendMessage" tabindex="-1" aria-hidden="false"><i class="far fa-envelope"></i>&nbsp;Send</button>
+        </div>
+
+        <p class="white small text-center mr-5 ml-5">If you need assistance, you can contact the <span class="strong">Track COVID at Home</span> study by phone at <span class="strong">1-855-981-0720</span></p>
+
+      </form>
+
+    </div>
+
+    <div class="modal-footer">
+      <p class="white small text-center mt-0">*Required Field</p>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="contactUsOverlay"></div>
+<!-- end contact form -->
+
+
+<!-- start master page   -->
+<form method="post" class="account">
+  <main class="survey-section position-relative">
+
+    <!-- Bonnie, I commented out the survey-wrapper. I think this is part of the master page, so not sure what you should do here -->
+    <div class="container mb-5">
+      <div class="d-flex justify-content-start align-items-center mb-4 mt-5 users">
+        <h2 class="blue mr-3">Cathy</h2>
+        <div class="grid">
+          <div class="bubble">Scott</div>
+          <div class="bubble">Alex</div>
+          <div class="bubble">Barbara</div>
+          <div class="bubble">Elizabeth</div>
+          <div class="bubble">Angelica</div>
+          <div class="bubble">Brian</div>
+        </div>
+      </div>
+
+
+      <div class="row mt-5">
+
+        <div class="col-lg-9 col-md-12">
+
+          <div class="d-flex justify-content-center align-items-center mb-4">
+            <h3 class="blue">My Tasks</h3>
+          </div>
+
+
+          <div class="d-flex flex-column align-items-start taskBars">
+
+
+            <div class="infoBar d-flex align-items-center current">
+              <p class="day">Diary Day - 1</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/diary-day_current.svg"></div>
+                <p class="due"><span class="light">Due:</span> Complete today</p>
+                <button class="btn btn-default absolute">Go to Diary <i class="far fa-arrow-right"></i></button>
+            </div>
+
+            <div class="infoBar d-flex align-items-center pending">
+              <p class="day">Diary Day - 2</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/diary-day_upcoming.svg"></div>
+              <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+            <div class="infoBar d-flex align-items-center pending">
+              <p class="day">Diary Day - 3</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/diary-day_upcoming.svg"></div>
+                <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+
+            <div class="infoBar d-flex align-items-center pending">
+              <p class="day">Diary Day - 4</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/diary-day_upcoming.svg"></div>
+                <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+
+
+            <div class="infoBar d-flex align-items-center pending">
+              <p class="day">Diary Day - 5</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/diary-day_upcoming.svg"></div>
+                <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+
+            <div class="infoBar d-flex align-items-center pending">
+              <p class="day">Diary Day - 6</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/diary-day_upcoming.svg"></div>
+                <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+
+            <div class="infoBar d-flex align-items-center pending">
+              <p class="day">Diary Day - 7</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/diary-day_upcoming.svg"></div>
+                <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+            <div class="infoBar d-flex align-items-center pending task">
+              <p class="day">10-Day Followup Form</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/followup_upcoming.svg"></div>
+                <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+            <div class="infoBar d-flex align-items-center pending task">
+              <p class="day">Closeout Form</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/closeout_upcoming.svg"></div>
+                <p class="due"><span class="light">Due:</span> 11/25/2021</p>
+            </div>
+
+            <div class="infoBar d-flex align-items-center complete">
+              <p class="day">Consent Form</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/questionnaire_complete.svg"></div>
+                  <p class="due"><i class="fal fa-check" aria-hidden="true"></i> 11/23/2021</p>
+            </div>
+
+
+            <div class="infoBar d-flex align-items-center complete">
+                <p class="day">Enrollment Questionnaire</p>
+
+              <div class="outerCircle"><img class="img-responsive" src="img/dashboard/consent_complete.svg"></div>
+                <p class="due"><i class="fal fa-check" aria-hidden="true"></i> 11/23/2021</p>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <div class="d-flex flex-column align-items-center mt-5 giftCards">
+
+            <img src="img/dashboard/50-card_pending.svg" class="img-responsive gift" alt="Fifty dollar gift card">
+            <p class="text-center smallest mb-4">You completed enrollment and <span class="strong">7 days of COVID-19 tests</span>, <span class="strong">Day 1 blood collection</span>, and <span class="strong">7 days of daily questions</span></p>
+
+            <img src="img/dashboard/25-card_pending.svg" class="img-responsive gift" alt="Twenty five dollar gift card">
+            <p class="text-center smallest mb-4">You completed <span class="strong">3 more days of COVID-19 tests</span> and <span class="strong">daily questions</span>... after finishing the first 7 days (altogether 10 days of COVID-19 test kits and daily questions)</p>
+
+
+
+            <img src="img/dashboard/25-card_pending.svg" class="img-responsive gift" alt="Twenty five dollar gift card">
+            <p class="text-center smallest mb-4">You finished the <span class="strong">small blood sample collection</span> at 4-6 weeks and the <span class="strong">final closeout questions</span> for the study</p>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- <div class="survey-btn-group">
+    <div class="btn-group-center">
+    <button class="btn button-default prev">Cancel</button>
+    <button type="submit" class="btn button-default next">Save</button>
+  </div>
+
+</div> -->
+</main>
+
+<!-- end master page -->
+
+</form>
+</div>
+
+
+
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+
+
+
+
+
+
+</script>
+</body>
+
+</html>

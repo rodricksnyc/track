@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>Track COVID at Home</title>
+  <link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+  <link rel="stylesheet" href="vendorlibs/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid overflow-hidden position-relative main">
+    <!-- <header class="landing">
+    <a href="" target="_blank">
+
+    <img src="img/logo.svg" class="img-responsive logo" alt="Track COVID at Home logo">
+  </a>
+</header> -->
+
+<header id="Home">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="pb-0" href="">
+        <div class="d-flex justify-content-start">
+          <img src="img/logo.svg" class="img-responsive logo" alt="Track COVID at Home logo">
+        </div>
+      </a>
+      <button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">
+
+              Dashboard
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="about.html" class="lang-select nav-link">
+              About
+
+            </a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a href="faq.html" class="lang-select nav-link">
+              FAQs
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="my-account.html" class="lang-select nav-link">
+              My account
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- start contact form -->
+<div id="slideOut" class="content-top">
+
+  <div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+    <i aria-hidden="true" class="far fa-envelope"></i><span class="tabText"> Contact</span>
+
+  </div>
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="closeThisPlease" id="close">
+        <button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+          ✕
+        </button>
+      </div>
+
+
+      <h3 class="text-center">Contact us with any questions or comments about the <span class="strong">Track COVID at Home</span> study!</h3>
+
+
+    </div>
+    <div class="modal-body">
+
+
+      <form method="post" id="theform">
+
+        <div class="form-group">
+          <label for="formControl1">Name</label>
+          <input id="formControl1" type="text" class="form-control secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name">
+        </div>
+        <div class="form-group">
+          <label for="formControl2">Email*</label>
+          <input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <label for="general-inquiry">Reason for Contact*</label>
+            <div class="around">
+
+              <div class="form-check">
+                <i class="far fa-comments"></i>
+                <input type="radio" name="optradio" value="1" class="form-check-input required" tabindex="-1" id="val1" checked>
+                <label for="val1" class="form-check-label">General Inquiry</label>
+              </div>
+              <div class="form-check">
+                <i class="far fa-wrench"></i>
+                <input type="radio" name="optradio" value="2" class="form-check-input" tabindex="-1" id="val2">
+                <label for="val2" class="form-check-label">Technical Issue</label>
+              </div>
+
+              <div class="form-check">
+                <i class="far fa-question-circle"></i>
+                <input type="radio" name="optradio" value="3" class="form-check-input" tabindex="-1" id="val3">
+                <label for="val3" class="form-check-label">Other</label>
+              </div>
+
+
+            </div>
+
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="formControl4">Message</label>
+          <textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-center mt-3 mb-3">
+          <button type="submit" class="btn" id="sendMessage" tabindex="-1" aria-hidden="false"><i class="far fa-envelope"></i>&nbsp;Send</button>
+        </div>
+
+        <p class="white small text-center mr-5 ml-5">If you need assistance, you can contact the <span class="strong">Track COVID at Home</span> study by phone at <span class="strong">1-855-981-0720</span></p>
+
+      </form>
+
+    </div>
+
+    <div class="modal-footer">
+      <p class="white small text-center mt-0">*Required Field</p>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="contactUsOverlay"></div>
+<!-- end contact form -->
+
+
+<!-- start master page   -->
+<form method="post" class="account">
+  <main class="survey-section position-relative">
+      <!-- Bonnie, I commented out the survey-wrapper. I think this is part of the master page, so not sure what you should do here -->
+    <div class="container">
+
+<div class="container position-relative d-flex flex-column mb-5">
+
+  <div class="d-flex justify-content-center align-items-center">
+    <h2 class="fortyEight blue" id="faqs">FAQs</h2>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center position-relative mb-2 list">
+
+
+    <h3 class="text-left mb-0 ml-4">&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+
+    <div class="hoverThis d-flex align-items-center">
+      <i class="fal fa-expand-alt changeIcon1 berry"></i>&nbsp;<p id="toggleAccordion1" accordion-id="#accordion" class="mb-0 berry" role="button" tabindex="0">expand all</p>
+    </div>
+
+  </div>
+
+  <div class="expandAll1 mb-5">
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques2">
+        What is the study about?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques2" class="collapse">
+        <div class="card-body ans">
+
+          <p>This study is about how COVID-19 spreads to people who live together. It is important for this research to get information from as many people who live together as soon as possible after a person has a positive COVID test. People who just recently received a positive COVID-19 test and the people that they live with are being asked to participate in this research study. </p>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques3">
+        How long is the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques3" class="collapse">
+        <div class="card-body ans">
+
+          <p>The study will last about 4-6weeks. Completing screening, consent and enrollment into the study will take approximately 30 minutes. Each day you collect a COVID-19 test sample and answer questions on the study website will take 15-20 minutes. On the first day of sample collection, we also will ask you to collect a few drops of blood from your arm using a special device. This should take just about 5 minutes. At the end of 10 days, we will ask you to complete a few questions on the 10th day of the collection period. These questions will take about 10 minutes. Approximately 4 weeks after starting the study, you will be asked to collect a few more drops of blood from your arm using the same special device and complete a final set of questions. This will take 10-15 minutes. </p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques4">
+        Who is conducting the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques4" class="collapse">
+        <div class="card-body ans">
+
+          <p>The Centers for Disease Control and Prevention is sponsoring this study. Westat, a research company based in Rockville, Maryland is managing the study and collecting information from you and the people with whom you live. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques5">
+        How many days after testing positive can I participate in the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques5" class="collapse">
+        <div class="card-body ans">
+
+          <p>We would like you and other people living in your household to agree to be in the study and start study activities as soon as possible after you (or another household contact) tests positive for COVID-19. If several of your household contacts do not agree to be in the study within 1 to 3 days of the test date of the household contact who was COVID-19 positive, your household may not be eligible for the study. The exact timing depends on whether the person who was COVID-19 positive had symptoms and when they began.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques6">
+        What if a household contact does not wish to participate? If a person in the household does not want to participate in the study, will the whole household not be able to participate?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques6" class="collapse">
+        <div class="card-body ans">
+          <p>The majority of people in the household need to participate for the household to be eligible. If the household is only two people, then both people need to agree to be in the study. If three people are living in the same household, then two of the three household contacts must agree to participate. One of the household participants must be the person who had the recent COVID-19 positive test. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques7">
+        What will happen in this research study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques7" class="collapse">
+        <div class="card-body ans">
+          <p>After you complete the screener questions and agree to be in the study, we will reach out to your household contacts to see if they are interested in being in the study too. If the majority of your household agrees to be in the study, everyone will need to complete the enrollment questions. You and the people you live with will be asked questions about yourself, your health and exposure to COVID-19. We will also ask if you have been vaccinated for COVID-19 and ask you to provide details about vaccinations (such as when and where you were vaccinated). These questions will be on the study website. </p>
+          <p>You will be asked to collect a COVID-19 test sample every day (by a swab in your nose or saliva sample) for 10 days in a row. You also will be asked to answer a few questions everyday on the study website about how you are feeling, if you took any medications and how much time you were around the people in your household. On the first day, we also will ask you to put a special device on your arm to collect a few of drops of blood for testing. You will need to ship the test kits to a laboratory for testing for COVID-19. It will take 15-20 minutes to complete the test and answer the questions every day. About 4 weeks later, we will ask you to use the special device on your arm again to collect a few drops of blood for testing and mail in the sample. We will also ask a few questions on the study website about the people you live with and if you saw a doctor or other healthcare worker during the study. We also ask permission for the study to keep these samples for future research. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques8">
+        Does my child or all my children have to be in the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques8" class="collapse">
+        <div class="card-body ans">
+          <p>We would like all people who live together to be in the study, including children of all ages, but it is not required that every person in the household participates. We want to have at least 2/3 of household contacts to participate in the study if they are eligible.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques9">
+        What is RTVN?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques9" class="collapse">
+        <div class="card-body ans">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques10">
+        Do I get anything for participating?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques10" class="collapse">
+        <div class="card-body ans">
+          <p>To thank you for the time involved in participating in the study, you will receive a gift card for activities you complete. You can receive up to $100 depending on what study activities you complete. Reimbursement will be given to each person, including children, for completing groups of activities as shown below:</p>
+          <ul>
+            <li>$50 after answering questions for study enrollment and collecting 7 days of COVID-19 test samples, completing daily questions on the study website for 7 days and completing the first blood drop collection </li>
+            <p><u>OR</u></p>
+
+            <li>$75 after answering questions for study enrollment and collecting 10 days of COVID-19 test samples, completing daily questions on the study website for 10 days and completing the first blood drop collection </li>
+          </ul>
+
+          <p>If you answer questions for study enrollment and collect 7 or 10 days of COVID-19 test sample collection, we will also reimburse you for the final collection of blood drops at 4 weeks after the start of the study. This includes:</p>
+          <ul>
+            <li>$25 for the second set of blood drops and final questions 4 weeks after collecting at least 7 days of COVID-19 test samples.</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques11">
+        Do I have to record my information within a certain timeframe?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques11" class="collapse">
+        <div class="card-body ans">
+          <p>Please complete the study questions, COVID-19 test samples and blood as noted in the instructions. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques12">
+        How long will I need to collect the COVID-19 sample collection?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques12" class="collapse">
+        <div class="card-body ans">
+          <p>It should take you just a few seconds to complete the COVID-19 test. It will take a few more minutes to answer about 12 questions on the study website about the COVID-19 test collection and report any symptoms you experienced in the day before you collected the COVID-19 test sample and how you interacted with other people in your home and outside your home in the past day.  </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques13">
+        What if I made an error while doing my COVID-19 test or collecting the blood drops? What should I do?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques13" class="collapse">
+        <div class="card-body ans">
+          <p>Please contact the study using the study website help function www.TrackCOVIDatHome.org, the study email at <a href="mailto:COVIDatHome@westat.com">COVIDatHome@westat.com</a> or toll-free number 1-855-981-0720. We will let you know what to do and decide how best to resolve this issue.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques14">
+        What if I missed a COVID-19 test collection one day?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques14" class="collapse">
+        <div class="card-body ans">
+          <p>If you missed one of the COVID-19 tests, just be sure to complete your test the next day and answer the daily diary questions. It is important to collect at least 7 tests during the 10-day testing period.</p>
+
+          <p>The Point of Contact for your household will receive reminders to collect the COVID-19 test sample every day. This adult is responsible for reminding all household members to complete the COVID-19 test and the daily diary questions. However, each person age 13 and over with individual contact information will receive reminders by text and/or email and may be contacted directly by phone by the evening if they have not completed their COVID-19 test or their daily diary questions on the study website.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques15">
+        What if I missed a day of answering the daily diary questions?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques15" class="collapse">
+        <div class="card-body ans">
+          <p>The Point of Contact for your household will receive reminders to collect the COVID-19 test sample. They are responsible for reminding all household contact every day to complete the COVID-19 test and complete the daily diary questions on the study website.</p>
+
+          <p>If you are late completing the daily diary questions, please complete them as soon as possible if the questions for that day are still open to you on the study website. The daily diary questions for one day will not be available for you to answer the next day. We want to match the answers to the daily diary questions to the COVID-19 test that you do each day. We will have only one set of questions â€“ with the date â€“ available for you to answer at one time. If you donâ€™t know the answer to a question, answer â€œdonâ€™t knowâ€.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques16">
+        If I am doing the COVID-19 test, do I need to collect blood drops from my arm as well? Why are you requesting blood drops?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques16" class="collapse">
+        <div class="card-body ans">
+          <p>Yes. Please also use the special device to collect a few drops of blood in the study supplies. The blood drops will be tested to see if you ever had COVID-19. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques17">
+        How will by my health information be safeguarded?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques17" class="collapse">
+        <div class="card-body ans">
+          <p>Your COVID-19 samples will be tested for COVID-19 at a certified testing laboratory. If your COVID-19 test sample shows a positive COVID-19 test result, your personal identifiable information such as your name, telephone number, age, and gender will be shared with the local health department. Testing laboratories are required by law to report positive COVID-19 test results to the local health department so that they can identify, monitor, assess or investigate the COVID-19 outbreak.</p>
+
+          <p>Other than required reporting of positive COVID-19 results, we will share information that you give us for the study only with other study researchers, and those records will not contain your name or other information that could identify you. However, if you give the Point of Contact for the household permission to access your study information, they will see all your answers.</p>
+
+          <p>This research study has a Certificate of Confidentiality from the Centers for Disease Control and Prevention (CDC). Unless you say it is okay, study staff cannot release information that may identify you for a legal action, a lawsuit, or as evidence. This protection applies to requests from federal, state, or local civil, criminal, administrative, legislative, or other proceedings. As an example, the Certificate would protect your information from a court subpoena.</p>
+
+          <p>There are some important things that you need to know. The Certificate DOES NOT protect your information if a federal, state, or local law says it must be reported. For example, some laws require reporting of abuse, communicable diseases, and threats of harm to yourself or others. The Certificate CANNOT BE USED to stop a federal or state government agency from checking records or evaluating programs. The Certificate DOES NOT stop reporting required by the U.S. Food and Drug Administration (FDA). The Certificate also DOES NOT stop your information from being used for other studies if allowed by federal regulations.</p>
+
+          <p>Study staff may release your information when you say it is okay. For example, you may give them permission to release information to insurers, your doctors, or any other person not connected with the study. The Certificate of Confidentiality does not stop you from releasing your own information. It also does not stop you from getting copies of your own information.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques18">
+        What is a household?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques18" class="collapse">
+        <div class="card-body ans">
+          <p>A household is a shared living space between two or more people. For this study, correctional facilities, long-term care facilities, boarding schools, hostels, dormitories, or other similar institutionalized/congregate settings are not considered households.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques19">
+        How will I send the COVID-19 test sample and blood drops from my arm back to the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques19" class="collapse">
+        <div class="card-body ans">
+          <p>You will receive a box with a FedEx shipping label. The study instructions will tell you how to pack the COVID-19 test sample and blood kits into the box and send it back to the testing laboratory. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques20">
+        Is there any cost to me for participating in the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques20" class="collapse">
+        <div class="card-body ans">
+          <p>It does not cost anything to take part in this research study.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques21">
+        Whom do I contact with questions?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques21" class="collapse">
+        <div class="card-body ans">
+          <p>If you have questions about your rights as a research participant, please call the Westat Human Subjects Protections office at 1-888-920-7631. Please leave a message with your full name, the name of the research study that you are calling about Track COVID at Home, and a phone number beginning with the area code. Someone will return your call as soon as possible.</p>
+
+          <p>Kerry Grace Morrissey, MPH, is leading the project at Westat. You may contact the study staff at 1-855-981-0720 to answer any questions you may have.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques22">
+        How do I learn more about the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques22" class="collapse">
+        <div class="card-body ans">
+          <p>You may learn more information by visiting the study website at <a href="https://www.TrackCOVIDatHome.org" target="_blank">www.TrackCOVIDatHome.org</a>. The study is sponsored by the Centers for Disease Control and Prevention (CDC) and you can find more information about this study on the CDC website (CDCURL).</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques23">
+        Will my information be used for any other studies?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques23" class="collapse">
+        <div class="card-body ans">
+          <p>When you agree to be in the study, you will also be asked to agree or not for your COVID-19 test sample and blood drops to be stored for future research studies. If you agree, you will not be notified if your samples are used for future research. However, your name or address will not be shared. The researchers will only see your ID number. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques24">
+        Can I withdraw from the study at any time?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques24" class="collapse">
+        <div class="card-body ans">
+          <p>Yes. This study is voluntary and you can stop being in the study at any time. We hope you will not but it is up to you. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques25">
+        How did you get my information?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques25" class="collapse">
+        <div class="card-body ans">
+          <p>If you tested positive for a COVID-19 test you took at a national laboratory, you received an invitation to this study when you saw your COVID-19 test results online in your account with the national laboratory.</p>
+
+          <p>If you lived with someone who tested positive for COVID-19 from a test at a national laboratory, this person was asked for the names and email addresses of the people they live with and you were sent an email about the study to see if you wanted to participate.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques26">
+        What is the age limit for participants?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques26" class="collapse">
+        <div class="card-body ans">
+          <p>There is no age limit for this study. All household members are asked to participate in the study.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques27">
+        Will I be contacted with my test results?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques27" class="collapse">
+        <div class="card-body ans">
+          <p>The COVID-19 test results will be available on the study website. You will need to log in to see the results. If you are age 13 or over and gave permission for the Point of Contact (who is an adult living in the household) that person also will be able to see the test results. Adults and children ages 13 to 17 will be asked if other household members have permission to the results. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques28">
+        Are there any other organizations involve in the study?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques28" class="collapse">
+        <div class="card-body ans">
+          <p>The Centers for Disease Control and Prevention (CDC) is sponsoring the study. Two testing laboratories, Quest Diagnostics Inc. and Vault COVID-19 test kits may be used to collect samples to test for COVID-19.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card faq-list">
+      <a class="card-link card-header ques" data-toggle="collapse" href="#ques29">
+        How will my information be used when the study ends?
+        <span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+      </a>
+      <div id="ques29" class="collapse">
+        <div class="card-body ans">
+          <p>Your COVID-19 samples will be tested for COVID-19 at a certified testing laboratory. If your COVID-19 test sample shows a positive COVID-19 test result, your personal identifiable information such as your name, telephone number, age, and gender will be shared with the local health department. Testing laboratories are required by law to report positive COVID-19 test results to the local health department so that they can identify, monitor, assess or investigate the COVID-19 outbreak.</p>
+
+          <p>Other than required reporting of positive COVID-19 results, we will share information that you give us for the study <u>only</u> with other study researchers, and those records will not contain your name or other information that could identify you. However, if you give the Point of Contact for the household permission to access your study information, they will see all your answers.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- <div class="survey-btn-group">
+<div class="btn-group-center">
+<button class="btn button-default prev">Cancel</button>
+<button type="submit" class="btn button-default next">Save</button>
+</div>
+
+</div> -->
+</main>
+
+<!-- end master page -->
+
+</form>
+</div>
+
+
+
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
